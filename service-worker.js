@@ -46,6 +46,21 @@ self.addEventListener('fetch', function(event) {
   );
 });
 
+const applicationServerPublicKey = 'BFfJYQmEvRi_75UI1LYfAKuGhlCGkAyy09f5OO4GhdcN8fEL0Q_Lt4uzL9sMi9oCabkpQ6x809TI4ahRSni-7ZQ';
+function urlB64ToUint8Array(base64String) {
+  const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  const base64 = (base64String + padding)
+    .replace(/\-/g, '+')
+    .replace(/_/g, '/');
+
+  const rawData = window.atob(base64);
+  const outputArray = new Uint8Array(rawData.length);
+
+  for (let i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
+}
 
 'use strict';
 
