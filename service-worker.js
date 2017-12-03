@@ -1,35 +1,33 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  '/',
-    '/css/scrolling-nav.css',
-  '/css/scrolling-nav.css',
-  '/js/scrolling-nav.js',
-  '/images/c (1).jpg',
-    '/images/c (2).jpg',
-    '/images/c (3).jpg',
-    '/images/c (4).jpg',
-    '/js/scrolling-nav.js',
-    '/scripts/main.js',
-    '/vendor/jquery-easing/jquery.easing.min.js'
-];
+        '/',
+        '/images/c (1).jpg',
+        '/images/c (2).jpg',
+        '/images/c (3).jpg',
+        '/images/c (4).jpg',
+        '/css/scrolling-nav.css',
+        '/scripts/main.js',
+        '/js/scrolling-nav.js',
+        '/vendor/jquery-easing/jquery.easing.min.js'
+    ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', function (event) {
   // Perform install steps
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-  );
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(function (cache) {
+                console.log('Opened cache');
+                return cache.addAll(urlsToCache);
+            })
+    );
 });
 
-self.addEventListener('activate', function(event) {
-  var cacheWhitelist = ['pages-cache-v1', 'blog-posts-cache-v1'];
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.map(function(cacheName) {
+self.addEventListener('activate', function (event) {
+    var cacheWhitelist = ['pages-cache-v1', 'blog-posts-cache-v1'];
+    event.waitUntil(
+        caches.keys().then(function (cacheNames) {
+            return Promise.all(
+                    cacheNames.map(function (cacheName) {
           if (cacheWhitelist.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
@@ -39,18 +37,18 @@ self.addEventListener('activate', function(event) {
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
   event.respondWith(
     caches.match(event.request)
-      .then(function(response) {
+      .then(function (response) {
         // Cache hit - return response
         if (response) {
           return response;
         }
         return fetch(event.request);
       }
-    )
-  );
+                )
+    );
 });
 
 const applicationServerPublicKey = 'BFfJYQmEvRi_75UI1LYfAKuGhlCGkAyy09f5OO4GhdcN8fEL0Q_Lt4uzL9sMi9oCabkpQ6x809TI4ahRSni-7ZQ';
