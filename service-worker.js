@@ -1,9 +1,16 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
   '/',
+    '/css/scrolling-nav.css',
   '/css/scrolling-nav.css',
   '/js/scrolling-nav.js',
-  '/images/logo.png'
+  '/images/c (1).jpg',
+    '/images/c (2).jpg',
+    '/images/c (3).jpg',
+    '/images/c (4).jpg',
+    '/js/scrolling-nav.js',
+    '/scripts/main.js',
+    '/vendor/jquery-easing/jquery.easing.min.js'
 ];
 
 self.addEventListener('install', function(event) {
