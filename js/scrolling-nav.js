@@ -20,8 +20,6 @@
     $('.navbar-collapse').collapse('hide');
   });
 
-  $('body').scrollspy({ target: '#navbar-example', offset: 50 });
-  
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
