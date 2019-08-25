@@ -1,12 +1,12 @@
 {
    "name": "Aditya",
-  "short_name": "Loading...",
+  "short_name": "Adi",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#FAFAFA",
     "theme_color": "#512DA8",
   "orientation": "portrait",
-  "description": "Aditya",
+  "description": "Aditya Github Site - Single Page - PWA ",
   "icons": [{
     "src": "images/badge-96x96.png",
     "sizes": "96x96",
