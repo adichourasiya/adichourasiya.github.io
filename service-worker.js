@@ -1,10 +1,10 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
         '/',
-        '/images/c (1).jpg',
-        '/images/c (2).jpg',
-        '/images/c (3).jpg',
-        '/images/c (4).jpg',
+        '/images/c(1).jpg',
+        '/images/c(2).jpg',
+        '/images/c(3).jpg',
+        '/images/c(4).jpg',
         '/css/scrolling-nav.css',
         '/scripts/main.js',
         '/js/scrolling-nav.js',
