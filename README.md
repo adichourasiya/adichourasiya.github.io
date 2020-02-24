@@ -1,1 +1,1 @@
-# https:\\www.adichourasiya.github.io
+# https://www.adichourasiya.github.io
