@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Adi</title>
   {% seo %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -23,13 +24,18 @@
         margin-bottom: 10px; /* Add some spacing between navigation items */
       }
     }
+    
+    /* Center align the LinkedIn badge */
+    .badge-container {
+      text-align: center;
+      margin-top: 20px; /* Adjust margin as needed */
+    }
   </style>
 </head>
 <body>
   <div id="header">
     <nav>
       <ul>
-        <li class="fork"><a href="https://www.linkedin.com/in/duckducksec">LinkedIn</a></li>
         <li class="downloads"><a href="mailto:adichourasiya@gmail.com">Email</a></li>
         <li class="downloads"><a href="https://wa.me/12369992000">WhatsApp</a></li>
         <li class="downloads"><a href="tel:+12369992000">Call</a></li>
@@ -43,9 +49,11 @@
         <p>"Where quality meets safety, innovation thrives."</p>
         <div class="photo-frame"></div>
       </div>
-      <!-- LinkedIn badge code -->
-      <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="duckducksec" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/duckducksec?trk=profile-badge">Adi C.</a></div>
       {{ content }}
+      <!-- LinkedIn badge moved after content -->
+      <div class="badge-container">
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="duckducksec" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/duckducksec?trk=profile-badge">Adi C.</a></div>
+      </div>
     </section>
   </div>
 </body>
