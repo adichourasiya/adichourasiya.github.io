@@ -9,17 +9,33 @@
   <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   {% include head-custom.html %}
+  <!-- Include LinkedIn Badge Script -->
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <style>
+    /* Adjust styles for mobile layout */
+    @media screen and (max-width: 768px) {
+      nav ul {
+        text-align: center; /* Center align the navigation items */
+        padding: 0;
+      }
+      nav ul li {
+        display: block; /* Display navigation items as block elements */
+        margin-bottom: 10px; /* Add some spacing between navigation items */
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="header">
-  <nav>
-    <ul>
-      <li class="downloads"><a href="mailto:adichourasiya@gmail.com">Email</a></li>
-      <li class="downloads"><a href="https://wa.me/12369992000">WhatsApp</a></li>
-      <li class="downloads"><a href="tel:+12369992000">Call</a></li>
-    </ul>
-  </nav>
-</div>
+    <nav>
+      <ul>
+        <li class="fork"><a href="https://www.linkedin.com/in/duckducksec">LinkedIn</a></li>
+        <li class="downloads"><a href="mailto:adichourasiya@gmail.com">Email</a></li>
+        <li class="downloads"><a href="https://wa.me/12369992000">WhatsApp</a></li>
+        <li class="downloads"><a href="tel:+12369992000">Call</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="wrapper">
     <section>
       <div id="title">
@@ -27,6 +43,7 @@
         <p>"Where quality meets safety, innovation thrives."</p>
         <div class="photo-frame"></div>
       </div>
+      <!-- LinkedIn badge code -->
       <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="duckducksec" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/duckducksec?trk=profile-badge">Adi C.</a></div>
       {{ content }}
     </section>
