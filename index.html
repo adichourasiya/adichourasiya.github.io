@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adi's personal portfolio – book a call or get in touch." />
+  <title>Adi · Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__inner">
+        <div class="hero__avatar" aria-hidden="true">👋</div>
+
+        <h1 class="hero__greeting">
+          Hello, I'm <span>Adi</span>.<br />
+          How can I help?
+        </h1>
+
+        <p class="hero__sub">
+          Let's connect and work together. Book a call to discuss how I can add value to your project.
+        </p>
+
+        <a
+          href="https://calendar-booking-app--adichourasiya.github.app/"
+          class="btn btn--primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📅 Book a Call
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Adi &mdash;
+      <a href="https://github.com/adichourasiya" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
