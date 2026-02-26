@@ -118,6 +118,13 @@ body {
   transform: translateY(0);
 }
 
+/* ── LinkedIn Badge ── */
+.linkedin-badge {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 /* ── Footer ── */
 footer {
   text-align: center;
