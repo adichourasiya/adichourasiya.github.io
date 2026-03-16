@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 
 <body>
@@ -19,26 +18,22 @@
   <main>
     <section class="hero" aria-label="Introduction">
       <div class="hero__inner">
-        <div class="hero__avatar" aria-hidden="true">👋</div>
+        <div class="hero__avatar" aria-hidden="true">
+          <img src="pic.png" alt="" class="hero__avatar-image" />
+        </div>
 
         <h1 class="hero__greeting">
           Hello, I'm <span>Adi</span>.<br />
           How can I help?
         </h1>
 
-        <p class="hero__sub">
-          Let's connect and work together. Book a call to discuss how I can help.
-        </p>
-
-        <a href="https://adi-cal.vercel.app/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
-          📅 Book a Call
-        </a>
-
-        <div class="linkedin-badge">
-          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark"
-            data-type="HORIZONTAL" data-vanity="duckducksec" data-version="v1">
-
-          </div>
+        <div class="hero__actions">
+          <a href="https://adi-cal.vercel.app/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+            📅 Book a Call
+          </a>
+          <a href="https://www.linkedin.com/in/duckducksec/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+            💼 Connect on LinkedIn
+          </a>
         </div>
       </div>
     </section>
@@ -46,71 +41,23 @@
         <div class="projects__inner">
           <h2 class="projects__title">My Projects</h2>
           <h3 class="projects__section-title">Live</h3>
-          <div class="projects__grid">
-            <details class="project-card" open>
-              <summary>Alchemy Gamma</summary>
-              <p>Instantly enhance any photo with AI-powered image improvement.</p>
-              <a href="https://alchemy-gamma.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-            <details class="project-card">
-              <summary>Chalkboard</summary>
-              <p>A simple, interactive blackboard for quick sketches and notes.</p>
-              <a href="https://www.chalkboard.website" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-            <details class="project-card">
-              <summary>Holi Event Signup</summary>
-              <p>Effortless registration for Holi celebrations.</p>
-              <a href="https://holi-mu-two.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-            <details class="project-card">
-              <summary>Adi Cal</summary>
-              <p>Book appointments and manage your calendar with ease.</p>
-              <a href="https://adi-cal.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-            <details class="project-card">
-              <summary>Buddha CRM</summary>
-              <p>A CRM tailored for restaurants to streamline operations.</p>
-              <a href="https://buddha-nu.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-            <details class="project-card">
-              <summary>Quick Study Game</summary>
-              <p>A swipe memory game for remembering any topic.</p>
-              <a href="https://www.quickstudygame.com" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-            <details class="project-card">
-              <summary>Anadi</summary>
-              <p>Company website.</p>
-              <a href="https://anadi.info/" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-            <details class="project-card">
-              <summary>Biz Test Navy</summary>
-              <p>Sales site for the AzDO plugin.</p>
-              <a href="https://biz-test-navy.vercel.app" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-            <details class="project-card">
-              <summary>PCBWay</summary>
-              <p>Board game PCB design.</p>
-              <a href="https://pcbway.vercel.app" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-            <details class="project-card">
-              <summary>Biz2Test Backend</summary>
-              <p>AI-powered child work item generator for Biz2Test. It adds a dedicated tab to every Azure DevOps work item form (Feature/User Story) to suggest, review, and create child work items (Tasks or Test Cases) directly inside Azure Boards.</p>
-              <a href="https://azdo-green.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-          </div>
+          <ul class="projects__directory">
+            <li class="project-item"><h4><span class="emoji">✨</span> Alchemy Gamma <a class="project-link-icon" href="https://alchemy-gamma.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Alchemy Gamma">🔗</a></h4><p>Instantly enhance any photo with AI-powered image improvement.</p></li>
+            <li class="project-item"><h4><span class="emoji">✏️</span> Chalkboard <a class="project-link-icon" href="https://www.chalkboard.website" target="_blank" rel="noopener noreferrer" aria-label="Open Chalkboard">🔗</a></h4><p>A simple, interactive blackboard for quick sketches and notes.</p></li>
+            <li class="project-item"><h4><span class="emoji">🎉</span> Holi Event Signup <a class="project-link-icon" href="https://holi-mu-two.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Holi Event Signup">🔗</a></h4><p>Effortless registration for Holi celebrations.</p></li>
+            <li class="project-item"><h4><span class="emoji">📅</span> Adi Cal <a class="project-link-icon" href="https://adi-cal.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Adi Cal">🔗</a></h4><p>Book appointments and manage your calendar with ease.</p></li>
+            <li class="project-item"><h4><span class="emoji">🍽️</span> Buddha CRM <a class="project-link-icon" href="https://buddha-nu.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Buddha CRM">🔗</a></h4><p>A CRM tailored for restaurants to streamline operations.</p></li>
+            <li class="project-item"><h4><span class="emoji">🧠</span> Quick Study Game <a class="project-link-icon" href="https://www.quickstudygame.com" target="_blank" rel="noopener noreferrer" aria-label="Open Quick Study Game">🔗</a></h4><p>A swipe memory game for remembering any topic.</p></li>
+            <li class="project-item"><h4><span class="emoji">🏢</span> Anadi <a class="project-link-icon" href="https://anadi.info/" target="_blank" rel="noopener noreferrer" aria-label="Open Anadi">🔗</a></h4><p>Company website.</p></li>
+            <li class="project-item"><h4><span class="emoji">🎲</span> PCBWay <a class="project-link-icon" href="https://pcbway.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open PCBWay">🔗</a></h4><p>Board game PCB design.</p></li>
+            <li class="project-item"><h4><span class="emoji">🤖</span> Biz2Test Backend <a class="project-link-icon" href="https://azdo-green.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Biz2Test Backend">🔗</a></h4><p>AI-powered child work item generator for Biz2Test. It adds a dedicated tab to every Azure DevOps work item form (Feature/User Story) to suggest, review, and create child work items (Tasks or Test Cases) directly inside Azure Boards.</p></li>
+          </ul>
           <h3 class="projects__section-title">Archived</h3>
-          <div class="projects__grid projects__grid--archived">
-            <details class="project-card">
-              <summary>Skill Marketplace</summary>
-              <p>Trade skills using time as currency - learn, teach, and grow together.</p>
-              <a href="https://skill-management-ivory.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-            <details class="project-card">
-              <summary>AzDO Extension</summary>
-              <p>Azure DevOps Marketplace extension for streamlined project management.</p>
-              <a href="https://azdo.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
-            </details>
-          </div>
+          <ul class="projects__directory projects__directory--archived">
+            <li class="project-item"><h4><span class="emoji">💼</span> Biz Test Navy <a class="project-link-icon" href="https://biz-test-navy.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open Biz Test Navy">🔗</a></h4><p>Sales site for the AzDO plugin.</p></li>
+            <li class="project-item"><h4><span class="emoji">🤝</span> Skill Marketplace <a class="project-link-icon" href="https://skill-management-ivory.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Skill Marketplace">🔗</a></h4><p>Trade skills using time as currency - learn, teach, and grow together.</p></li>
+            <li class="project-item"><h4><span class="emoji">🧩</span> AzDO Extension <a class="project-link-icon" href="https://azdo.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open AzDO Extension">🔗</a></h4><p>Azure DevOps Marketplace extension for streamlined project management.</p></li>
+          </ul>
         </div>
       </section>
   </main>
